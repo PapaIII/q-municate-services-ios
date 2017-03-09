@@ -284,6 +284,10 @@ static NSString* attachmentPath(QBChatAttachment *attachment) {
         });
         
         return;
+    } else {
+        if (completion) {
+            completion(nil, nil);
+        }
     }
     
 }
